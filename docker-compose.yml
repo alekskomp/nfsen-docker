@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  nfsen:
+    container_name: nfsen
+    build: .
+    ports:
+      - 80:80
+      - 9995:9995/udp
+    volumes:
+      - ./data:/opt/data
+      - ./filters:/opt/nfsen/var/filters
+      - ./fmt:/opt/nfsen/var/fmt
+    restart: unless-stopped
+
