@@ -1,6 +1,8 @@
-# nfsen + nfdump in docker
+# nfsen in docker
 
 * debian 12
+* nginx
+* php-fpm
 * [nfsen](https://github.com/phaag/nfsen) version: 1.3.11
 * [nfdump](https://github.com/phaag/nfdump) version: 1.7.1
 
